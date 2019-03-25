@@ -34,7 +34,7 @@ if [ -z $cmd ]; then
   brew install tmux
 fi
 
-
+git clone https://github.com/wangweicheng7/iterm-tumx-zsh.git
 
 # # clone
 # git clone https://github.com/powerline/fonts.git --depth=1
