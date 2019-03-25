@@ -34,11 +34,6 @@ if [ -z $cmd ]; then
   brew install tmux
 fi
 
-pwd
-
-echo '>>>>>>>>>>>>'
-echo $filepath
-
 # git clone https://github.com/wangweicheng7/iterm-tumx-zsh.git
 
 # # clone
@@ -51,18 +46,17 @@ echo $filepath
 # rm -rf fonts
 
 # 拷贝资源文件
-echo '>>>>>>>>>>>>'
-cd $filepath/iterm-tumx-zsh
-pwd
+cd $filepath
 # cp resource/pwzsh.zsh-theme ~/zsh_support/pwzsh.zsh-theme
 # cp resource/tmux.conf ~/zsh_support/.tmux.conf
 # cp resource/zshrc  ~/zsh_support/.zshrc
 
-cp resource/pwzsh.zsh-theme ~/.oh-my-zsh/themes/pwzsh.zsh-theme
-cp resource/tmux.conf ~/.tmux.conf
-cp resource/zshrc  ~/.zshrc
+cp iterm-tumx-zsh/resource/pwzsh.zsh-theme ~/.oh-my-zsh/themes/pwzsh.zsh-theme
+cp iterm-tumx-zsh/resource/tmux.conf ~/.tmux.conf
+cp iterm-tumx-zsh/resource/zshrc  ~/.zshrc
 
-exit 0
+rm -rf iterm-tumx-zsh
+
 $cmd has -t $session
 
 if [ $? != 0 ]; then
