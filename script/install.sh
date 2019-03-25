@@ -35,7 +35,7 @@ if [ -z $cmd ]; then
 fi
 
 pwd
-
+echo '======='
 echo $filepath
 cd $filepath/..
 
