@@ -51,6 +51,7 @@ echo $filepath
 # rm -rf fonts
 
 # 拷贝资源文件
+echo '>>>>>>>>>>>>'
 cd $filepath/iterm-tumx-zsh
 pwd
 # cp resource/pwzsh.zsh-theme ~/zsh_support/pwzsh.zsh-theme
