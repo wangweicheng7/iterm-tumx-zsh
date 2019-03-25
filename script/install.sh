@@ -2,7 +2,7 @@
 #
 # name     : tmuxen， tmux environment made easy
 # author   : Weicheng Wang 809405366@qq.com
-# license  : LIT
+# license  : MIT
 # created  : 2019 Mar 25
 # modified : 2019 Mar 25
 #
@@ -47,13 +47,15 @@ fi
 
 # 拷贝资源文件
 cd $filepath/..
-cp resource/pwzsh.zsh-theme ~/zsh_support/pwzsh.zsh-theme
-cp resource/tmux.conf ~/zsh_support/.tmux.conf
-cp resource/zshrc  ~/zsh_support/.zshrc
+# cp resource/pwzsh.zsh-theme ~/zsh_support/pwzsh.zsh-theme
+# cp resource/tmux.conf ~/zsh_support/.tmux.conf
+# cp resource/zshrc  ~/zsh_support/.zshrc
 
-# cp resource/pwzsh.zsh-theme ~/.oh-my-zsh/themes/pwzsh.zsh-theme
-# cp resource/tmux.conf ~/.tmux.conf
-# cp resource/zshrc  ~/.zshrc
+
+
+cp resource/pwzsh.zsh-theme ~/.oh-my-zsh/themes/pwzsh.zsh-theme
+cp resource/tmux.conf ~/.tmux.conf
+cp resource/zshrc  ~/.zshrc
 
 exit 0
 $cmd has -t $session
