@@ -34,7 +34,11 @@ if [ -z $cmd ]; then
   brew install tmux
 fi
 
-git clone https://github.com/wangweicheng7/iterm-tumx-zsh.git
+pwd
+
+exit 0
+
+# git clone https://github.com/wangweicheng7/iterm-tumx-zsh.git
 
 # # clone
 # git clone https://github.com/powerline/fonts.git --depth=1
@@ -50,8 +54,6 @@ cd $filepath/..
 # cp resource/pwzsh.zsh-theme ~/zsh_support/pwzsh.zsh-theme
 # cp resource/tmux.conf ~/zsh_support/.tmux.conf
 # cp resource/zshrc  ~/zsh_support/.zshrc
-
-
 
 cp resource/pwzsh.zsh-theme ~/.oh-my-zsh/themes/pwzsh.zsh-theme
 cp resource/tmux.conf ~/.tmux.conf
