@@ -36,6 +36,9 @@ fi
 
 pwd
 
+echo $filepath
+cd $filepath/..
+
 exit 0
 
 # git clone https://github.com/wangweicheng7/iterm-tumx-zsh.git
@@ -50,7 +53,7 @@ exit 0
 # rm -rf fonts
 
 # 拷贝资源文件
-cd $filepath/..
+
 # cp resource/pwzsh.zsh-theme ~/zsh_support/pwzsh.zsh-theme
 # cp resource/tmux.conf ~/zsh_support/.tmux.conf
 # cp resource/zshrc  ~/zsh_support/.zshrc
