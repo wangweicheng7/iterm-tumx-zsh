@@ -36,14 +36,17 @@ fi
 
 # git clone https://github.com/wangweicheng7/iterm-tumx-zsh.git
 
-# # clone
-# git clone https://github.com/powerline/fonts.git --depth=1
-# # install
-# cd fonts
-# ./install.sh
-# # clean-up a bit
-# cd ..
-# rm -rf fonts
+# 安装字体
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # 拷贝资源文件
 cd $filepath
